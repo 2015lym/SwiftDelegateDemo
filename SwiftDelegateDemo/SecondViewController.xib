@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SecondViewController" customModule="UbiTalkSwift" customModuleProvider="target">
+            <connections>
+                <outlet property="contentField" destination="ft1-aS-sI3" id="DE6-Pk-prp"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ft1-aS-sI3">
+                    <rect key="frame" x="50" y="100" width="275" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="Hw9-eu-Fon"/>
+                    </constraints>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WK8-ac-Ri0">
+                    <rect key="frame" x="172" y="318.5" width="31" height="30"/>
+                    <state key="normal" title="传值"/>
+                    <connections>
+                        <action selector="popToFirstViewController:" destination="-1" eventType="touchUpInside" id="Jxl-gC-sJl"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="WK8-ac-Ri0" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="8xZ-z5-xij"/>
+                <constraint firstItem="ft1-aS-sI3" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="50" id="LCH-qF-1f2"/>
+                <constraint firstItem="WK8-ac-Ri0" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="NPz-1H-CMn"/>
+                <constraint firstAttribute="trailing" secondItem="ft1-aS-sI3" secondAttribute="trailing" constant="50" id="ZCY-39-N4U"/>
+                <constraint firstItem="ft1-aS-sI3" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="fAd-xI-lTP"/>
+                <constraint firstItem="ft1-aS-sI3" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="100" id="sX7-2Q-L30"/>
+            </constraints>
+        </view>
+    </objects>
+</document>
