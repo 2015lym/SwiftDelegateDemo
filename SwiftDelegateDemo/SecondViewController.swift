@@ -9,9 +9,7 @@
 import UIKit
 
 protocol TestDelegate{
-    
     func getValue(value:String)
-    
 }
 
 class SecondViewController: UIViewController {
